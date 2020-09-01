@@ -1,4 +1,4 @@
-/// Aliased output property
+/// In-line styles
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 // import { EventEmitter } from 'events';
@@ -13,7 +13,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   [class.glyphicon-star-empty]="!isSelected"
   (click)="onClick()"></span>
   `,
-  styleUrls: ['./favorite.component.css']
+  styles:[ `
+  .glyphicon
+  { font-size: xx-large;
+      padding-left: 20px;
+  }`]
 })
 export class FavoriteComponent implements OnInit {
 
