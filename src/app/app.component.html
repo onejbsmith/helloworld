@@ -1,7 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
   <h1>
-    Welcome to {{ title }}!<favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
+    <favorite 
+    [is-favorite]="post.isFavorite" 
+    (change)="onFavoriteChanged($event)">
+    </favorite>
+    Welcome to {{ title }}!
   </h1>
   
   <authors></authors>

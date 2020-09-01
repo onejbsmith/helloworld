@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventArgs } from './favorite/favorite.component';
 
 @Component({
   selector: 'app-root',
@@ -13,9 +14,15 @@ export class AppComponent {
     isFavorite: false
   }
 
-  onFavoriteChanged(eventParam)
+  // onFavoriteChanged(eventParam: { newValue:boolean })
+  // {
+  //   window.alert(`Favorite changed to: ${eventParam.newValue}`);
+  // }
+
+  
+  onFavoriteChanged(eventParam: EventArgs)
   {
-    window.alert(`Favorite changed to: ${eventParam}`);
+    window.alert(`Favorite changed to: ${eventParam.newValue}`);
   }
 
 }
