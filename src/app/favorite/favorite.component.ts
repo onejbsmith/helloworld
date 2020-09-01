@@ -1,10 +1,10 @@
-/// In-line styles
-
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+/// View Encapsulation
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 // import { EventEmitter } from 'events';
 
 @Component({
   selector: 'favorite',
+  encapsulation: ViewEncapsulation.Emulated,
   template:
   `
   <link href = "http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet">
@@ -19,9 +19,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
       padding-left: 20px;
   }`]
 })
-export class FavoriteComponent implements OnInit {
-
-  constructor() { }
+export class FavoriteComponent {
 
   @Input("is-favorite") isSelected;
   /// aliased output property
