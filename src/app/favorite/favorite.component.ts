@@ -1,4 +1,4 @@
-/// View Encapsulation
+
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 // import { EventEmitter } from 'events';
 
