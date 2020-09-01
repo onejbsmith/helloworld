@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular App 2';
+
+  post = {
+    title: "Title",
+    isFavorite: false
+  }
+
+  onFavoriteChanged(eventParam)
+  {
+    window.alert(`Favorite changed to: ${eventParam}`);
+  }
+
 }

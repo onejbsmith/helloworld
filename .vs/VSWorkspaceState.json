@@ -3,9 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\mymod",
+    "\\src\\app\\authors",
     "\\src\\app\\mymod\\mycomp"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\app\\authors\\authors.component.html",
   "PreviewInSolutionExplorer": false
 }

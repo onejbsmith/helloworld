@@ -1,7 +1,10 @@
 <h2>
   {{authors.length}} Authors 
 </h2>
-
+<!-- <input #email (keyup.enter)="onEnter(email.value)" /> -->
+<input [value]="email" (keyup.enter)="onEnter2()" />
+<!-- <favorite ></favorite> -->
+<button (click)="onSave($event);" class="btn btn-primary" [style.color]="isActive? 'magenta': 'white'">Save</button>
 <ul>
   <li *ngFor="let author of authors">
     {{author}}

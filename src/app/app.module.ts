@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,16 +10,23 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 
+import { FormsModule } from '@angular/forms';
+import { SummaryPipe } from './summary.pipe';
+import { FavoriteComponent } from './favorite/favorite.component';
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     ThingComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    SummaryPipe,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [
     CoursesService,
