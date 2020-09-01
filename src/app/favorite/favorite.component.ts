@@ -9,14 +9,15 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
   `
   <link href = "http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet">
   <span class="glyphicon" 
-  [class.glyphicon-star]="isSelected" 
-  [class.glyphicon-star-empty]="!isSelected"
+  [class.glyphicon-heart]="isSelected" 
+  [class.glyphicon-heart-empty]="!isSelected"
   (click)="onClick()"></span>
   `,
   styles:[ `
   .glyphicon
   { font-size: xx-large;
       padding-left: 20px;
+      color:red;
   }`]
 })
 export class FavoriteComponent {
